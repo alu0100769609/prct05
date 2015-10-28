@@ -18,9 +18,6 @@ class TestFraccionario < Test::Unit::TestCase
 
   def testSuma
     assert_equal("(4/3)", (@untercio + @unidad).to_s)
-  end
-
-  def testSuma2
     assert_equal("(9/9)", (@untercio + @dostercios).to_s)
   end
 

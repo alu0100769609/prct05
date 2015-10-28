@@ -18,11 +18,11 @@ class Fraccionario
     Fraccionario.new(@x * -1, @y)
   end
 
-  def + (value)	#Suma otra fracción	//Da el resultado del maximo común divisor
+  def + (value)	#Suma con otra fracción	//Da el resultado sin simplificar
     Fraccionario.new(@x * @y + value.x * value.y , @y * value.y)
   end
 
-  def - (value)
+  def - (value)	#Resta con otra fracción //Sólo si es del mismo denominador
   	Fraccionario.new(@x - value.x , @y)
   end
 
